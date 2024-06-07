@@ -1,357 +1,384 @@
-  body {
-    height: 100vh;
-  }
-.fondo { 
-    background-color: beige;
-   }
-  .imagendefondo{
-    background-image: url(./../../assets/ImagendefondoFinal.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
-  
-  nav  {
-      height: 10vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: bold;
-      padding: 10px 5% 10px 5%;
-      background-color: bisque;
-      width: 100%;
-      flex-direction: row;
-      
-    }
-    
-  
-  nav h1{
-    color: black;            /*texto que se superpone*/
+body {
+  height: 100vh;
+}
+.fondo {
+  background-color: beige;
+}
+.imagendefondo {
+  background-image: url(./../../assets/ImagendefondoFinal.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 5% 10px 5%;
+  background-color: bisque;
+  width: 100%;
+  flex-direction: row;
+  padding: 60px; /*Se pone el nav al medio*/
+}
+
+nav  {
+  h1 {
+    color: black; /*texto que se superpone*/
     text-align: justify;
-    font-family:'Times New Roman', Times, serif;
-  
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
-  
-  nav ul li {
+}
+
+nav {
+  ul {
+    li{
       display: inline-block;
       padding: 0px 20px; /*aca pongo los enlaces en el sitio que quiero*/
-  
-  }
-  
-  nav ul li a { 
-     color: #716055; /* cambia de color los items de la nav*/
-      text-decoration: none;
-      font-size: 1.5rem;
-      text-align: right;
     }
-  
-  
-   
-  nav ul li a { 
-  
-      text-decoration: none; /*pone el texto sin subrayado */
-      font-size: 1.5rem;
-      font-family:Georgia, 'Times New Roman', Times, serif;
-    }
-  
-  nav ul li a:hover {
-    box-shadow: 0px 0px 15px rgb(4, 4, 4);
   }
-  
-    
-  
-  nav h1 {
-      color:black;             /*texto que se superpone*/
-      text-align: justify;
-      font-family:'Times New Roman', Times, serif;
-      text-align: center;
-      padding-top: 100px;
-      padding-bottom: 100px;
-     
-      }
-  
-      .presentacion{
-        text-align: center;
-        padding-top: 200px;
-        padding-bottom: 200px;
-        color:716055;
-        font-family:Arial, Helvetica, sans-serif;
-        font-style:oblique;
-        font-size: 2.5rem;
-        font-weight: 850;
-        background-image: linear-gradient(bisque, transparent );
-      }
-    
+}
 
-  
-  @media (max-width:768px) {
-    
+nav {
+  ul {
+    li {
+      a {
+        color: #716055; /* cambia de color los items de la nav*/
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-align: right;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    }
   }
-  
-  
-  .footer {
-    /* grid-area: footer; */
-    padding: 10px;
-    
-    display: flex;
-    justify-content:center;
+}
+
+nav {
+  ul {
+    li {
+      a:hover {
+        box-shadow: 0px 0px 15px rgb(4, 4, 4);
+      }
+    }
   }
-  
-  .footer a {
+}
+
+
+
+.presentacion {
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: 716055;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 2.5rem;
+  font-weight: 850;
+  background-image: linear-gradient(bisque, transparent);
+}
+
+.footer {
+  /* grid-area: footer; */
+  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  a{
     display: inline-block;
     margin: 0 7px 0 7px;
   }
-  
-  .footer a i {
-    display: inline-block;
-    border-radius: 50%;
+}
+
+.footer {
+  a {
+    i {
+      display: inline-block;
+      border-radius: 50%;
+    }
   }
-  
-  .footer a i:hover {
-    /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 0px 0px 15px rgb(142, 252, 132);
-  }
-  
-  .iconos {
-    width: 40px;
-    height: 40px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  
-  .facebook {
-    background-image: url("./../assets/facebook-svgrepo-com.svg");
-  }
-  
-  .instagram {
-    background-image: url("./../assets/instagram-round-svgrepo-com.svg");
-  }
-  
-  .twitter {
-    background-image: url("./../assets/twitter-round-svgrepo-com.svg");
-  }
-  
-  .youtube {
-    background-image: url("./../assets/youtube-round-svgrepo-com.svg");
-  }
-  
-  /*Media Queries Pagina index*/
-@media screen and (max-width:468px)  {
-  .presentacion{
-  font-size: 1.5rem;  
-  }
-  nav h1 {
-    font-size: 2rem;
-    text-align: center;
+
+}
+
+.footer  {
+  a {
+    i:hover {
+      box-shadow: 0px 0px 15px rgb(142, 252, 132);
+    }
   }
 }
-@media screen and (min-width:481px) and (max-width:1024px) {
-.presentacion{
-  font-size: 1.8rem;
+
+.iconos {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
- }
-  
-  
-  
-  
-  /*PAGINA NOSOTROS*/
-  .pasteleria{
-    font-size: 2.8rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+
+.facebook {
+  background-image: url("./../assets/facebook-svgrepo-com.svg");
+}
+
+.instagram {
+  background-image: url("./../assets/instagram-round-svgrepo-com.svg");
+}
+
+.twitter {
+  background-image: url("./../assets/twitter-round-svgrepo-com.svg");
+}
+
+.youtube {
+  background-image: url("./../assets/youtube-round-svgrepo-com.svg");
+}
+
+/*Probando variables con Sass*/
+
+/*Media Queries Pagina index*/
+@media screen and (max-width: 468px) {
+  .presentacion {
+    font-size: 1.5rem;
   }
-  main div img{
-    margin-left: 150px; /*Separacion de imagen*/
+  nav{
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
-  
-  .subtitulo{
-    text-align: left;
-    font-style: italic;
-    margin-left: 47px;
+}
+@media screen and (min-width: 468px) and (max-width: 1024px) {
+  .presentacion {
     font-size: 1.8rem;
   }
-  .masas { 
-   float: right;
-   margin-right: 40px;
- 
-  }
-  .descripcion { 
-    font-family:sans-serif;
-    font-style: normal;
-    font-size: 28px; 
-    text-align: justify;
-    margin-left: 50px;
-  }
+}
 
- .footer1{
+/*PAGINA NOSOTROS*/
+.pasteleria {
+  font-size: 2.8rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+main {
+  div {
+    img {
+      margin-left: 150px; /*Separacion de imagen*/
+    }
+  }
+}
+
+.subtitulo {
+  text-align: left;
+  font-style: italic;
+  margin-left: 47px;
+  font-size: 1.8rem;
+}
+.masas {
+  float: right;
+  margin-right: 40px;
+}
+.descripcion {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 28px;
+  text-align: justify;
+  margin-left: 50px;
+}
+
+.footer1 {
   padding-top: 250px;
- }
+}
 
-  /*Media de Nosotros*/
-  
-@media screen and (max-width:480px) {
-  .contenedor{
+/*Media de Nosotros*/
+
+@media screen and (max-width: 480px) {
+  .contenedor {
     text-align: center;
   }
-  .pasteleria{
+  .pasteleria {
     font-size: 1.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
-  .subtitulo{
+  .subtitulo {
     text-align: center;
     font-style: italic;
     font-size: 1rem;
   }
-  .masas { 
+  .masas {
     align-items: left;
     width: 220px;
     height: 260px;
-   }
-   .descripcion { 
-    font-family:sans-serif;
+  }
+  .descripcion {
+    font-family: sans-serif;
     font-style: normal;
-    font-size: 18px; 
+    font-size: 18px;
     text-align: left;
   }
 }
 
-@media screen and (min-width:481px) and (max-width:1024px) {
-  .pasteleria{
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .pasteleria {
     font-size: 2.5rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
-  main div img{
-    margin-left: 150px; /*Separacion de imagen*/
+  main div img {
+    div {
+      img {
+        margin-left: 150px;
+      }
+    }
   }
-  
-  .subtitulo{
+
+  .subtitulo {
     text-align: center;
     font-style: italic;
   }
-  .masas { 
-   justify-content: right;
-  height: 350px;
-  width: 300px;
+  .masas {
+    justify-content: right;
+    height: 350px;
+    width: 300px;
   }
-  .descripcion { 
-    font-family:sans-serif;
+  .descripcion {
+    font-family: sans-serif;
     font-style: normal;
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     text-align: justify;
     margin-left: 50px;
   }
 }
 
-  /* PAGINA CONOCENOS*/
-  .fondocartas{
-    background-color:wheat;
-  }
-  
-  .bordes{
-    border-top: solid 5px rosybrown; /*La clase esta dentro del div p(dos clases juntas)*/
-    border-radius: 5px;
-  }
-  
-   div h4{
-    font-size: 2rem;
-    color:rosybrown;
-  }
-  div  p{
-    font-size: 22px;
-
-  }
-  
-  /*Media para pagina Conocenos*/
-
-@media screen and (max-width:480px)  {
-  .tarjetas{
-    text-align: center;
-    width: 80%;
-  div p {
-    font-size: 18px;
-    text-align: center;
-  }
-  .empleados {
-    width: 100%;
-    height: 100%;     //manejo de tamaño de img
-  }
-  div h4 {
-    font-size: 1.5rem;
-  }
-  
-  }
-
+/* PAGINA CONOCENOS*/
+.fondocartas {
+  background-color: wheat;
 }
 
+.bordes {
+  border-top: solid 5px rosybrown; /*La clase esta dentro del div p(dos clases juntas)*/
+  border-radius: 5px;
+}
 
-
-
-
-  /*PAGINA SERVICIO*/
-  .tamanoss {
-   width: 300px;
-   height: 500px;
+div {
+  h4 {
+    font-size: 2rem;
+    color: rosybrown;
   }
+}
+div {
+  p{
+    font-size: 22px;
+  }
+}
 
+/*Media para pagina Conocenos*/
 
-  div tr th{
-    color:goldenrod;
-    font-size: 1.5rem;
-    font-family:sans-serif;
-  }
-  div tr td{
-    color:rgb(231, 131, 0);
-    font-size:1.2rem;
-  }
-  .subrayado{
-    border-top: solid 5px rgb(206, 213, 0);
-  }
-  
-  .titulo{
+@media screen and (max-width: 480px) {
+  .tarjetas {
     text-align: center;
-    font-family: fantasy;
-    color: gold;
-  }
-  .margenes{
-    margin-right: 0px; /*Cambio la distancia entre elementos*/
-  }
- 
-  
-  /*Media de Servicio*/
-
-
-
-  @media screen and (max-width:480px) {
-    .tamanoss {
-      width: 200px;
-      height: 230px;
-      align-items: center;
+    width: 80%;
+    padding-top: 30px;
+    div {
+      p {
+        font-size: 18px;
+        text-align: center;
+      }
     }
-    div tr th{
-      color:goldenrod;
+    .empleados {
+      width: 100%;
+      height: 100%; //manejo de tamaño de img
+    }
+    div h4 {
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+    .bordes {
+      padding-top: 40px;
+    }
+  }
+}
+
+/*PAGINA SERVICIO*/
+.tamanoss {
+  width: 300px;
+  height: 500px;
+}
+
+div {
+  tr {
+    th{
+      color: goldenrod;
+      font-size: 1.5rem;
+      font-family: sans-serif;
+    }
+  }
+}
+div {
+  tr {
+    td {
+      color: rgb(231, 131, 0);
       font-size: 1.2rem;
-      font-family:sans-serif;
-    }
-    div tr td{
-      color:rgb(231, 131, 0);
-      font-size:1rem;
-      text-align: center;
-    }
-    .margenes{
-      width: 100px;
-      height: 250px;
-    }
-    .tablas {
-      height: 100px;
-      width: 100px;
     }
   }
-@media screen and (min-width:550px) and (max-width:770px){
+}
+.subrayado {
+  border-top: solid 5px rgb(206, 213, 0);
+}
+
+.titulo {
+  text-align: center;
+  font-family: fantasy;
+  color: gold;
+}
+.margenes {
+  margin-right: 0px; /*Cambio la distancia entre elementos*/
+}
+
+/*Media de Servicio*/
+
+@media screen and (max-width: 480px) {
+  .tamanoss {
+    width: 200px;
+    height: 230px;
+    align-items: center;
+  }
+  div {
+    tr {
+      th {
+        color: goldenrod;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+      }
+    }
+  }
+  div {
+    tr {
+      td {
+        color: rgb(231, 131, 0);
+        font-size: 1rem;
+        text-align: center;
+      }
+    }
+  }
+  .margenes {
+    width: 100px;
+    height: 250px;
+  }
+  .tablas {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 770px) {
   .tamanoss {
     width: 200px;
     height: 300px;
@@ -359,65 +386,59 @@
   }
 }
 
-
-  
-  /*PAGINA CONTACTANOS*/
-  .punto{
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-  .ubiretiro{
-    padding-top: 20px;
-  }
-  .buscanos{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2rem;
-    padding-top: 30px;
-  }
-  .redes{
-    font-size: 1.2rem;
-    font-weight: 100;
-  
-  }
-  
-  .infopersona{
-    font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-  }
- 
-  .formulario{
-    font-size: 20px;
-    font-style: oblique;  /*Estilizo titulos de rellenar*/
-    font-family:serif;
-    font-weight: 800;
-    color:crimson;
-  }
-  fieldset {
-    padding-right: 50px;
-  }
-  /*Media de Contactanos*/
-
-@media screen and (max-width:480px) {
-  .ubiretiro {
-  width: 200px;
-  height: 250px;
-  align-items: left;
-}  
+/*PAGINA CONTACTANOS*/
+.punto {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.ubiretiro {
+  padding-top: 20px;
+}
 .buscanos {
-  font-size: 1.5rem;
-  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  padding-top: 30px;
+}
+.redes {
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 
 .infopersona {
-  font-size: 1.3rem;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.formulario{
-  font-size: 1rem;
+.formulario {
+  font-size: 20px;
+  font-style: oblique; /*Estilizo titulos de rellenar*/
+  font-family: serif;
+  font-weight: 800;
+  color: crimson;
 }
+fieldset {
+  padding-right: 50px;
+}
+/*Media de Contactanos*/
 
-}
-  
-  
+@media screen and (max-width: 480px) {
+  .ubiretiro {
+    width: 200px;
+    height: 250px;
+    align-items: left;
+  }
+  .buscanos {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .infopersona {
+    font-size: 1.3rem;
+  }
+
+  .formulario {
+    font-size: 1rem;
+  }
+ }
   
