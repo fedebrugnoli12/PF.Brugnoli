@@ -7,7 +7,7 @@ body {
   background-color: beige;
 }
 
-.imagendefondo {
+.fondopaginaprincipal {
   background-image: url(./../../assets/ImagendefondoFinal.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -229,6 +229,11 @@ div h4 {
 
 div p {
   font-size: 22px;
+}
+
+.tarjetas {
+  -moz-bordes: 0px, 4px, 10px, black;
+  box-shadow: 0px, 4px, 10px, black;
 }
 
 /*Media para pagina Conocenos*/
