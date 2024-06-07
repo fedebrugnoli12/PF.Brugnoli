@@ -5,7 +5,7 @@ body {
 .fondo {
   background-color: $color-principal;
 }
-.imagendefondo {
+.fondopaginaprincipal {
   background-image: url(./../../assets/ImagendefondoFinal.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -86,7 +86,6 @@ nav {
 .footer {
   /* grid-area: footer; */
   padding: 10px;
-
   display: flex;
   justify-content: center;
 }
@@ -274,6 +273,15 @@ div {
   }
 }
 
+
+@mixin box-shadow ($x,$y,$blur,$color){
+  -moz-bordes: $x,$y,$blur,$color; 
+  box-shadow: $x,$y,$blur,$color;
+}
+//Mixin
+.tarjetas{
+  @include box-shadow(0px,4px ,10px, black);
+}
 /*Media para pagina Conocenos*/
 
 @media screen and (max-width: 480px) {
