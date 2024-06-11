@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fedebrugnoli12/PreEntrega2.Brugnoli.git"
+    "url": "git+https://github.com/fedebrugnoli12/PreEntrega3.Brugnoli.git"
   },
   "keywords": [
     "sass",
@@ -22,7 +22,7 @@
   "author": "Federico Brugnoli",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fedebrugnoli12/PreEntrega2.Brugnoli/issues"
+    "url": "https://github.com/fedebrugnoli12/PreEntrega3.Brugnoli/issues"
   },
-  "homepage": "https://github.com/fedebrugnoli12/PreEntrega2.Brugnoli#readme"
+  "homepage": "https://github.com/fedebrugnoli12/PreEntrega3.Brugnoli#readme"
 }
