@@ -1,12 +1,14 @@
 body {
   height: 100vh;
 }
-@import "variables";
+
+/*Variables*/
 .fondo {
-  background-color: $color-principal;
+  background-color: beige;
 }
+
 .fondopaginaprincipal {
- background-image: url(./../../assets/ImagendefondoFinal.png);
+  background-image: url(./../../assets/ImagendefondoFinal.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -21,53 +23,36 @@ nav {
   align-items: center;
   font-weight: bold;
   padding: 10px 5% 10px 5%;
-  background-color: $color-secundario;
+  background-color: bisque;
   width: 100%;
   flex-direction: row;
   padding: 60px; /*Nav al medio*/
 }
 
-nav {
-  h1 {
-    color: black; /*texto que se superpone*/
-    text-align: justify;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+nav h1 {
+  color: black; /*texto que se superpone*/
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-nav {
-  ul {
-    li {
-      display: inline-block;
-      padding: 0px 20px; /*aca pongo los enlaces en el sitio que quiero*/
-    }
-  }
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px; /*aca pongo los enlaces en el sitio que quiero*/
 }
 
-nav {
-  ul {
-    li {
-      a {
-        color: #716055; /* cambia de color los items de la nav*/
-        text-decoration: none;
-        font-size: $medium-size;
-        text-align: right;
-        font-family: $principal-font;
-      }
-    }
-  }
+nav ul li a {
+  color: #716055; /* cambia de color los items de la nav*/
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: right;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-nav {
-  ul {
-    li {
-      a:hover {box-shadow: 10px 0px 15px rgb(4, 4, 4);
-      }
-    }
-  }
+nav ul li a:hover {
+  box-shadow: 10px 0px 15px rgb(4, 4, 4);
 }
 
 .presentacion {
@@ -79,7 +64,7 @@ nav {
   font-style: oblique;
   font-size: 2.5rem;
   font-weight: 850;
-  background-image: linear-gradient($color-secundario, transparent);
+  background-image: linear-gradient(bisque, transparent);
 }
 
 .footer {
@@ -88,28 +73,18 @@ nav {
   justify-content: center;
 }
 
-.footer {
-  a {
-    display: inline-block;
-    margin: 0 7px 0 7px;
-  }
+.footer a {
+  display: inline-block;
+  margin: 0 7px 0 7px;
 }
 
-.footer {
-  a {
-    i {
-      display: inline-block;
-      border-radius: 50%;
-    }
-  }
+.footer a i {
+  display: inline-block;
+  border-radius: 50%;
 }
 
-.footer {
-  a {
-    i:hover {
-      box-shadow: 10px 0px 20px $color-secundario ;
-    }
-  }
+.footer a i:hover {
+  box-shadow: 10px 0px 20px bisque;
 }
 
 .iconos {
@@ -135,18 +110,14 @@ nav {
   background-image: url("./../assets/youtube-round-svgrepo-com.svg");
 }
 
-
-
 /*Media Queries Pagina index*/
 @media screen and (max-width: 468px) {
   .presentacion {
-    font-size: $medium-size;
+    font-size: 1.5rem;
   }
-  nav {
-    h1 {
-      font-size: $max-size;
-      text-align: center;
-    }
+  nav h1 {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 @media screen and (min-width: 468px) and (max-width: 1024px) {
@@ -154,21 +125,17 @@ nav {
     font-size: 1.8rem;
   }
 }
-
 /*PAGINA NOSOTROS*/
 .pasteleria {
   font-size: 2.8rem;
-  font-family: $principal-font;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-main {
-  div {
-    img {
-      margin-left: 150px; /*Separacion de imagen*/
-    }
-  }
+
+main div img {
+  margin-left: 150px; /*Separacion de imagen*/
 }
 
 .subtitulo {
@@ -177,10 +144,12 @@ main {
   margin-left: 47px;
   font-size: 1.8rem;
 }
+
 .masas {
   float: right;
   margin-right: 40px;
 }
+
 .descripcion {
   font-family: sans-serif;
   font-style: normal;
@@ -194,16 +163,15 @@ main {
 }
 
 /*Media de Nosotros*/
-
 @media screen and (max-width: 480px) {
   .pasteleria {
-    font-size: $medium-size;
-    font-family: $principal-font;
+    font-size: 1.5rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
   .subtitulo {
     text-align: center;
     font-style: italic;
-    font-size: $min-size;
+    font-size: 1rem;
   }
   .masas {
     align-items: left;
@@ -216,24 +184,18 @@ main {
     font-size: 18px;
     text-align: left;
   }
-  .footer1{
+  .footer1 {
     padding-top: 15px;
   }
 }
-
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .pasteleria {
     font-size: 2.5rem;
-    font-family: $principal-font;
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
-  main {
-    div {
-      img {
-        margin-left: 150px;
-      }
-    }
+  main div img {
+    margin-left: 150px;
   }
-
   .subtitulo {
     text-align: center;
     font-style: italic;
@@ -246,95 +208,75 @@ main {
   .descripcion {
     font-family: sans-serif;
     font-style: normal;
-    font-size: $max-size;
+    font-size: 2rem;
     text-align: justify;
     margin-left: 50px;
   }
 }
-
 /* PAGINA CONOCENOS*/
 .fondocartas {
   background-color: wheat;
 }
 
 .bordes {
-  border-top: solid 5px $color-terciario; /*La clase esta dentro del div p(dos clases juntas)*/
+  border-top: solid 5px rosybrown; /*La clase esta dentro del div p(dos clases juntas)*/
   border-radius: 5px;
 }
 
-div {
-  h4 {
-    font-size: $max-size;
-    color: $color-terciario;
-  }
-}
-div {
-  p {
-    font-size: 22px;
-  }
+div h4 {
+  font-size: 2rem;
+  color: rosybrown;
 }
 
+div p {
+  font-size: 22px;
+}
 
-@mixin box-shadow ($x,$y,$blur,$color) {
-  -moz-box-shadow: $x,$y,$blur,$color; 
-  -webkit-box--shadow: $x,$y,$blur,$color;
-  box-shadow: $x,$y,$blur,$color; 
+.presentacion {
+  -moz-box-shadow: 0px, 4px, 10px, black;
+  -webkit-box--shadow: 0px, 4px, 10px, black;
+  box-shadow: 0px, 4px, 10px, black;
 }
-//Mixin
-.presentacion{
-  @include box-shadow(0px,4px ,10px ,black );
-}
+
 /*Media para pagina Conocenos*/
-
 @media screen and (max-width: 480px) {
   .tarjetas {
     text-align: center;
     width: 80%;
     padding-top: 30px;
-    div {
-      p {
-        font-size: 18px;
-        text-align: center;
-      }
-    }
-    .empleados {
-      width: 100%;
-      height: 100%; //manejo de tamaño de img
-    }
-    div {
-      h4 {
-        font-size: $medium-size;
-      }
-    }
-    .bordes {
-      padding-top: 40px;
-    }
+  }
+  .tarjetas div p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .tarjetas .empleados {
+    width: 100%;
+    height: 100%;
+  }
+  .tarjetas div h4 {
+    font-size: 1.5rem;
+  }
+  .tarjetas .bordes {
+    padding-top: 40px;
   }
 }
-
 /*PAGINA SERVICIO*/
 .tamanoss {
   width: 100%;
   height: 100%;
 }
 
-div {
-  tr {
-    th {
-      color: goldenrod;
-      font-size: $medium-size;
-      font-family: sans-serif;
-    }
-  }
+div tr th {
+  color: goldenrod;
+  font-size: 1.5rem;
+  font-family: sans-serif;
 }
-div {
-  tr {
-    td {
-      color: rgb(231, 131, 0);
-      font-size: $max-size;
-    }
-  }
+
+div tr td {
+  color: rgb(231, 131, 0);
+  font-size: 2rem;
 }
+
 .subrayado {
   border-top: solid 5px rgb(206, 213, 0);
 }
@@ -345,40 +287,34 @@ div {
   color: gold;
   font-size: 2.5rem;
 }
+
 .margenes {
   margin-right: 0px; /*Cambio la distancia entre elementos*/
 }
-.colorboton {
-  background-color: $color-terciario;
-}
-/*Media de Servicio*/
 
+.colorboton {
+  background-color: rosybrown;
+}
+
+/*Media de Servicio*/
 @media screen and (max-width: 468px) {
-  .titulo{
-    font-size: $max-size;
+  .titulo {
+    font-size: 2rem;
   }
   .tamanoss {
     width: 200px;
     height: 230px;
     align-items: center;
   }
-  div {
-    tr {
-      th {
-        color: goldenrod;
-        font-size: $medium-size;
-        font-family: sans-serif;
-      }
-    }
+  div tr th {
+    color: goldenrod;
+    font-size: 1.5rem;
+    font-family: sans-serif;
   }
-  div {
-    tr {
-      td {
-        color: rgb(231, 131, 0);
-        font-size: $min-size;
-        text-align: center;
-      }
-    }
+  div tr td {
+    color: rgb(231, 131, 0);
+    font-size: 1rem;
+    text-align: center;
   }
   .margenes {
     width: 100px;
@@ -388,12 +324,11 @@ div {
     height: 100px;
     width: 100px;
   }
-  .carousel2{
+  .carousel2 {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
   }
-  
 }
 @media screen and (min-width: 469px) and (max-width: 1000px) {
   .tamanoss {
@@ -401,38 +336,35 @@ div {
     height: 300px;
     align-items: center;
   }
-  div {
-    tr {
-      td {
-        font-size: $medium-size;
-      }
-    }
+  div tr td {
+    font-size: 1.5rem;
   }
-  
 }
-
 /*PAGINA CONTACTANOS*/
 .punto {
-  font-size: $max-size;
+  font-size: 2rem;
   font-weight: 400;
-  font-family: $principal-font;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .ubiretiro {
   padding-top: 20px;
 }
+
 .buscanos {
-  font-family: $principal-font;
-  font-size: $max-size;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
   padding-top: 30px;
 }
+
 .redes {
   font-size: 1.2rem;
   font-weight: 100;
 }
 
 .infopersona {
-  font-size: $max-size;
-  font-family: $principal-font;
+  font-size: 2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .formulario {
@@ -442,11 +374,12 @@ div {
   font-weight: 800;
   color: crimson;
 }
+
 fieldset {
   padding-right: 50px;
 }
-/*Media de Contactanos*/
 
+/*Media de Contactanos*/
 @media screen and (max-width: 480px) {
   .ubiretiro {
     width: 200px;
@@ -454,15 +387,15 @@ fieldset {
     align-items: left;
   }
   .buscanos {
-    font-size: $medium-size;
+    font-size: 1.5rem;
     text-align: center;
   }
-
   .infopersona {
     font-size: 1.3rem;
   }
-
   .formulario {
-    font-size: $min-size;
+    font-size: 1rem;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
