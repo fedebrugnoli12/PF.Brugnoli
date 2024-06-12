@@ -26,7 +26,7 @@ nav {
   background-color: bisque;
   width: 100%;
   flex-direction: row;
-  padding: 60px; /*Nav queda  al medio*/
+  padding: 60px; /*Nav queda al medio*/
 }
 
 nav h1 {
@@ -95,19 +95,19 @@ nav ul li a:hover {
 }
 
 .facebook {
-  background-image: url("./../assets/facebook-svgrepo-com.svg");
+  background-image: url("./../../assets/facebook-svgrepo-com.svg");
 }
 
 .instagram {
-  background-image: url("./../assets/instagram-round-svgrepo-com.svg");
+  background-image: url("./../../assets/instagram-round-svgrepo-com.svg");
 }
 
 .twitter {
-  background-image: url("./../assets/twitter-round-svgrepo-com.svg");
+  background-image: url("./../../assets/twitter-round-svgrepo-com.svg");
 }
 
 .youtube {
-  background-image: url("./../assets/youtube-round-svgrepo-com.svg");
+  background-image: url("./../../assets/youtube-round-svgrepo-com.svg");
 }
 
 /*Media Queries Pagina index*/
