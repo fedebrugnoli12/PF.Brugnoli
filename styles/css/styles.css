@@ -218,6 +218,10 @@ main div img {
   background-color: wheat;
 }
 
+.tarjetas {
+  text-align: center;
+}
+
 .bordes {
   border-top: solid 5px rosybrown; /*La clase esta dentro del div p(dos clases juntas)*/
   border-radius: 5px;
@@ -242,11 +246,12 @@ div p {
 @media screen and (max-width: 480px) {
   .tarjetas {
     text-align: center;
-    width: 80%;
+    width: 100%;
     padding-top: 30px;
+    padding-left: 20px;
   }
   .tarjetas div p {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
   }
   .tarjetas .empleados {
@@ -258,6 +263,14 @@ div p {
   }
   .tarjetas .bordes {
     padding-top: 40px;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 480px) {
+  .tarjetas {
+    text-align: center;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 80px;
   }
 }
 /*PAGINA SERVICIO*/
@@ -326,6 +339,10 @@ div tr td {
   }
   .carousel2 {
     padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .carousel1 {
     padding-left: 50px;
     padding-right: 50px;
   }

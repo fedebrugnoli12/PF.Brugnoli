@@ -256,7 +256,9 @@ main {
 .fondocartas {
   background-color: wheat;
 }
-
+.tarjetas {
+  text-align: center;
+}
 .bordes {
   border-top: solid 5px $color-terciario; /*La clase esta dentro del div p(dos clases juntas)*/
   border-radius: 5px;
@@ -286,14 +288,15 @@ div {
 }
 /*Media para pagina Conocenos*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:480px){
   .tarjetas {
     text-align: center;
-    width: 80%;
+    width: 100%;
     padding-top: 30px;
+    padding-left: 20px;
     div {
       p {
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
       }
     }
@@ -311,6 +314,16 @@ div {
     }
   }
 }
+@media screen and (min-width:410px) and (max-width:480px) {
+    .tarjetas {
+      text-align: center;
+      width: 100%;
+      padding-right: 50px;
+      padding-left: 80px;
+  }
+}
+  
+
 
 /*PAGINA SERVICIO*/
 .tamanoss {
@@ -393,7 +406,10 @@ div {
     padding-left: 50px;
     padding-right: 50px;
   }
-  
+  .carousel1 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 @media screen and (min-width: 469px) and (max-width: 1000px) {
   .tamanoss {
