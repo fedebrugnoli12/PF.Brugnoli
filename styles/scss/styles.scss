@@ -6,7 +6,7 @@ body {
   background-color: $color-principal;
 }
 .fondopaginaprincipal {
- background-image: url(./../../assets/ImagendefondoFinal.png);
+  background-image: url(./../../assets/ImagendefondoFinal.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -64,7 +64,8 @@ nav {
 nav {
   ul {
     li {
-      a:hover {box-shadow: 10px 0px 15px rgb(4, 4, 4);
+      a:hover {
+        box-shadow: 10px 0px 15px rgb(4, 4, 4);
       }
     }
   }
@@ -107,7 +108,7 @@ nav {
 .footer {
   a {
     i:hover {
-      box-shadow: 10px 0px 20px $color-secundario ;
+      box-shadow: 10px 0px 20px $color-secundario;
     }
   }
 }
@@ -134,8 +135,6 @@ nav {
 .youtube {
   background-image: url("./../../assets/youtube-round-svgrepo-com.svg");
 }
-
-
 
 /*Media Queries Pagina index*/
 @media screen and (max-width: 468px) {
@@ -204,6 +203,7 @@ main {
     text-align: center;
     font-style: italic;
     font-size: $min-size;
+    padding-right: 5px;
   }
   .masas {
     align-items: left;
@@ -214,10 +214,11 @@ main {
     font-family: sans-serif;
     font-style: normal;
     font-size: 18px;
-    text-align: left;
+    text-align: justify;
+    padding-right: 20px;
   }
-  .footer1{
-    padding-top: 15px;
+  .footer1 {
+    padding-top: 180px;
   }
 }
 
@@ -276,24 +277,25 @@ div {
   }
 }
 
-
-@mixin box-shadow ($x,$y,$blur,$color) {
-  -moz-box-shadow: $x,$y,$blur,$color; 
-  -webkit-box--shadow: $x,$y,$blur,$color;
-  box-shadow: $x,$y,$blur,$color; 
+@mixin box-shadow($x, $y, $blur, $color) {
+  -moz-box-shadow: $x, $y, $blur, $color;
+  -webkit-box--shadow: $x, $y, $blur, $color;
+  box-shadow: $x, $y, $blur, $color;
 }
 //Mixin
-.presentacion{
-  @include box-shadow(0px,4px ,10px ,black );
+.presentacion {
+  @include box-shadow(0px, 4px, 10px, black);
 }
 /*Media para pagina Conocenos*/
 
-@media screen and (max-width:480px){
-  .tarjetas {
+@media screen and (max-width: 410px) {
+  .card {
     text-align: center;
     width: 100%;
-    padding-top: 30px;
-    padding-left: 20px;
+    height: 100%;
+    padding-top: 0px;
+    padding-left: 12px;
+    padding-right: 12px;
     div {
       p {
         font-size: 20px;
@@ -314,16 +316,14 @@ div {
     }
   }
 }
-@media screen and (min-width:410px) and (max-width:480px) {
-    .tarjetas {
-      text-align: center;
-      width: 100%;
-      padding-right: 50px;
-      padding-left: 80px;
+@media screen and (min-width: 410px) and (max-width: 480px) {
+  .card {
+    text-align: center;
+    width: 100%;
+    padding-right: 25px;
+    padding-left: 25px;
   }
 }
-  
-
 
 /*PAGINA SERVICIO*/
 .tamanoss {
@@ -344,7 +344,8 @@ div {
   tr {
     td {
       color: rgb(231, 131, 0);
-      font-size: $max-size;
+      font-size: 1.9rem;
+      padding-top: 12px;
     }
   }
 }
@@ -366,8 +367,8 @@ div {
 }
 /*Media de Servicio*/
 
-@media screen and (max-width: 468px) {
-  .titulo{
+@media screen and (max-width: 420px) {
+  .titulo {
     font-size: $max-size;
   }
   .tamanoss {
@@ -379,8 +380,9 @@ div {
     tr {
       th {
         color: goldenrod;
-        font-size: $medium-size;
+        font-size: 1.2rem;
         font-family: sans-serif;
+        text-align: center;
       }
     }
   }
@@ -393,25 +395,25 @@ div {
       }
     }
   }
+  .tablas {
+   width: 100%;
+  }
+ 
   .margenes {
     width: 100px;
     height: 250px;
   }
-  .tablas {
-    height: 100px;
-    width: 100px;
-  }
-  .carousel2{
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
+  .carousel2 {
+    padding-top: 60px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   .carousel1 {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
-@media screen and (min-width: 469px) and (max-width: 1000px) {
+@media screen and (min-width: 421px) and (max-width: 800px) {
   .tamanoss {
     width: 200px;
     height: 300px;
@@ -424,7 +426,18 @@ div {
       }
     }
   }
-  
+  .carousel2 {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .carousel1 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  table {
+    width: 100%;
+  }
 }
 
 /*PAGINA CONTACTANOS*/
@@ -432,9 +445,11 @@ div {
   font-size: $max-size;
   font-weight: 400;
   font-family: $principal-font;
+  text-align: center;
 }
 .ubiretiro {
   padding-top: 20px;
+  text-align: center;
 }
 .buscanos {
   font-family: $principal-font;
@@ -458,8 +473,11 @@ div {
   font-weight: 800;
   color: crimson;
 }
-fieldset {
-  padding-right: 50px;
+.informacion {
+  text-align: center;
+}
+.datospersona {
+  text-align: center;
 }
 /*Media de Contactanos*/
 
@@ -477,7 +495,10 @@ fieldset {
   .infopersona {
     font-size: 1.3rem;
   }
-
+  .informacion {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
   .formulario {
     font-size: $min-size;
   }
