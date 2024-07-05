@@ -68,9 +68,11 @@ nav ul li a:hover {
 }
 
 .footer {
-  padding: 10px;
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer a {
@@ -119,6 +121,13 @@ nav ul li a:hover {
     font-size: 2rem;
     text-align: center;
   }
+  .footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 468px) and (max-width: 1024px) {
   .presentacion {
@@ -158,10 +167,6 @@ main div img {
   margin-left: 50px;
 }
 
-.footer1 {
-  padding-top: 200px;
-}
-
 /*Media de Nosotros*/
 @media screen and (max-width: 480px) {
   .pasteleria {
@@ -186,8 +191,12 @@ main div img {
     text-align: justify;
     padding-right: 20px;
   }
-  .footer1 {
-    padding-top: 180px;
+  .footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1024px) {
@@ -225,8 +234,19 @@ main div img {
 }
 
 .bordes {
-  border-top: solid 5px rosybrown; /*La clase esta dentro del div p(dos clases juntas)*/
+  border-top: solid 8px rosybrown; /*La clase esta dentro del div p(dos clases juntas)*/
   border-radius: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+}
+
+.columnas1 {
+  display: flex;
 }
 
 div h4 {
@@ -268,6 +288,17 @@ div p {
   .card .bordes {
     padding-top: 40px;
   }
+  .footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  div div div {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
 }
 @media screen and (min-width: 410px) and (max-width: 480px) {
   .card {
@@ -275,6 +306,17 @@ div p {
     width: 100%;
     padding-right: 25px;
     padding-left: 25px;
+  }
+  .footer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  div div div {
+    padding-top: 15px;
+    padding-bottom: 5px;
   }
 }
 /*PAGINA SERVICIO*/
@@ -419,6 +461,10 @@ div tr td {
   text-align: center;
 }
 
+fieldset {
+  padding-right: 35px;
+}
+
 /*Media de Contactanos*/
 @media screen and (max-width: 480px) {
   .ubiretiro {
@@ -439,6 +485,28 @@ div tr td {
   }
   .formulario {
     font-size: 1rem;
+  }
+  fieldset {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .boton1 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  .boton2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+  .boton3 {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 8px;
+    margin-bottom: 10px;
   }
 }
 
